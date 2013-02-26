@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CommitDialog">
+		<item value="1021" key="DIALOG_WIDTH"/>
+		<item value="96" key="DIALOG_Y_ORIGIN"/>
+		<item value="521" key="DIALOG_X_ORIGIN"/>
+		<item value="1113" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="com.vectrace.MercurialEclipse.wizards.PushRepoWizard">
+		<list key="ConfigurationWizardMainPage.STORE_USERNAME_ID">
+			<item value="gary"/>
+		</list>
+	</section>
+	<section name="IgnoreDialog">
+		<item value="212" key="DIALOG_WIDTH"/>
+		<item value="352" key="DIALOG_Y_ORIGIN"/>
+		<item value="189" key="DIALOG_HEIGHT"/>
+		<item value="677" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="MergeDialog">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="108" key="DIALOG_Y_ORIGIN"/>
+		<item value="521" key="DIALOG_X_ORIGIN"/>
+		<item value="555" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="RevertDialog">
+		<item value="816" key="DIALOG_WIDTH"/>
+		<item value="212" key="DIALOG_Y_ORIGIN"/>
+		<item value="845" key="DIALOG_X_ORIGIN"/>
+		<item value="746" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="MercurialParticipantSynchronizeWizard">
+	</section>
+	<section name="RevisionChooserDialog">
+		<item value="859" key="DIALOG_WIDTH"/>
+		<item value="222" key="DIALOG_Y_ORIGIN"/>
+		<item value="354" key="DIALOG_X_ORIGIN"/>
+		<item value="385" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="com.vectrace.MercurialEclipse.wizards.CloneRepoWizard">
+		<list key="ConfigurationWizardMainPage.STORE_USERNAME_ID">
+			<item value="gary"/>
+		</list>
+	</section>
+	<section name="com.vectrace.MercurialEclipse.wizards.PullRepoWizard">
+		<list key="ConfigurationWizardMainPage.STORE_USERNAME_ID">
+			<item value="gary"/>
+		</list>
+		<section name="/Users/gary/projects/NotiVYRE/server-notivyre">
+			<item value="false" key="update"/>
+			<item value="false" key="merge"/>
+			<item value="false" key="force"/>
+			<item value="false" key="cleanupdate"/>
+			<item value="false" key="rebase"/>
+		</section>
+	</section>
+</section>

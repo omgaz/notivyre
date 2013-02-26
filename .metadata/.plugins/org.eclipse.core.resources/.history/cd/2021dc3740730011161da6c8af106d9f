@@ -1,0 +1,19 @@
+<% var sockets = vars.getSockets() %>
+
+<table class="table table-striped">
+	<thead><th>ID</th><th>User</th></thead>
+	<tbody>
+		<%
+			for(i in sockets){
+				var socket = sockets[i]
+
+				%>
+					<tr>
+						<td><%=socket.id %></td>
+						<td><%=socket.store.user %></td>
+					</tr>
+				<%
+			}
+		%>
+	</tbody>
+</table>

@@ -1,0 +1,69 @@
+<section id="gridSystem">
+	<div class="row show-grid"><div class="span12">&nbsp;</div></div>
+	
+	<div class="row show-grid">
+		<div class="span6">
+			<div class="row show-grid">
+				<div class="span6">
+					<form class="form-horizontal">
+						<legend>User Selection</legend>
+						<fieldset>
+							<!-- Choose a channel -->
+							<div class="control-group">
+								<label class="control-label" for="channels">Who are you?</label>
+					            <div class="controls">
+									<select id="channels">
+										<option value="396">Gary</option>
+										<option value="602">Blanca</option>
+										<option value="395">Matt</option>
+									</select>
+									<p class="help-block">Start by selecting a user, or change to a different user</p>
+								</div>
+				          	</div>
+							<!-- Buttons -->
+							<div class="form-actions">
+								<a class="btn btn-primary" href="#" id="selectUser"><i class="icon-user icon-white"></i> Select User</a>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="row show-grid notifierSection" style="display:none">
+				<div class="span6">
+					<form class="form-horizontal">
+						<legend>On Brand Notifier</legend>
+						<fieldset>
+							<!-- Choose a message -->
+							<div class="control-group">
+								<label class="control-label" for="notiMsg">Action to simulate</label>
+								<div class="controls">
+									<select id="notiMsg">
+										<option value="Project Created: A new project, '<a href=''>My Project</a>' has been created.">Creating a Project</option>
+										<option value="Approver Added: '<a href=''>Joe McElroy</a>' has been added as an approver to '<a href=''>My Project</a>'.">Add Approver</option>
+										<option value="Creative Uploaded: A new brief, '<a href=''>file_001.pdf</a>', has been uploaded to '<a href=''>My Project</a>' ">Upload Brief</option>
+										<option value="Creative Uploaded: A new concept, '<a href=''>file_002.pdf</a>', has been uploaded to '<a href=''>My Project</a>' ">Upload Concept</option>
+										<option value="Creative Uploaded: A new final creative, '<a href=''>file_003.pdf</a>', has been uploaded to '<a href=''>My Project</a>' ">Upload Final Creative</option>
+										<option value="Approved: '<a href=''>file_001.pdf</a>', has been approved by '<a href=''>Gary Chisholm</a>' in '<a href=''>My project</a>'">Approve Creative</option>
+									</select>
+									<p class="help-block">Select your simulation experience.</p>
+								</div>
+							</div>
+
+							<!-- Buttons -->
+							<div class="form-actions">
+								<a class="btn btn-primary" href="#" id="sendMessage"><i class="icon-share-alt icon-white"></i> Send Notification</a>
+							</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="span6 messageSection" style="display:none">
+			<legend><span>Messages</span>
+			<a class="btn btn-danger" href="#" id="markAllAsRead" style="float:right; margin-left: 10px"><i class="icon-trash icon-white"></i> Mark All As Read</a>
+			<a class="btn btn-info" href="#" id="queryForUnread" style="float:right"><i class="icon-envelope icon-white"></i> Get Unread</a></legend>
+			<table class="table table-striped messages">
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+</section>

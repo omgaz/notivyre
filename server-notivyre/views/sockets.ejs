@@ -1,0 +1,27 @@
+<p>Below is a list of all sockets currently connect to <a href="http://172.16.5.25:8080/" title="Go to On Brand" target="_blank">172.16.5.25:8080</a>.
+<% var sockets = vars.getSockets() %>
+<table class="table table-striped">
+	<thead><th>ID</th><th>Instance</th><th>Brand</th><th>Profile ID</th><th>Username</th></thead>
+	<tbody>
+		<%
+			if(!sockets.length) {
+				%>
+				<tr><td colspan="5" style="text-align: center"><h4>There are currently no users connected.</h4></td></tr>
+				<%
+			}
+			for(i in sockets){
+				var socket = sockets[i]
+
+				%>
+					<tr>
+						<td><%=socket.id %></td>
+						<td><%=socket.store.instanceID %></td>
+						<td><%=socket.store.brand %></td>
+						<td><%=socket.store.profileId %></td>
+						<td><%=socket.store.user %></td>
+					</tr>
+				<%
+			}
+		%>
+	</tbody>
+</table>

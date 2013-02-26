@@ -1,0 +1,42 @@
+.hide {
+	display:none !important;
+}
+
+div.content {
+	margin-top: 10px;
+}
+
+div.navbar div.navbar-inner {
+	height: 45px;
+	padding-top: 8px;
+}
+
+ul.nav li {
+	position: relative;
+}
+
+ul.nav li div.noti {
+	opacity: 1;
+	z-index: 999;
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background: url(../img/noti.png) center no-repeat;
+}
+
+ul.nav li div.noti i {
+	font-style: normal;
+	font-size: 12px;
+	font-weight: 700;
+	color: white;
+	position: absolute;
+	top: 2px;
+	right: 8px;
+}
+
+td.message span.text {
+	margin-left: 10px;
+}

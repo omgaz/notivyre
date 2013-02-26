@@ -1,0 +1,32 @@
+<!DOCTYPE html>  <html> <head>   <title>redis.coffee</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>            <div id="jump_to">         Jump To &hellip;         <div id="jump_wrapper">           <div id="jump_page">                                           <a class="source" href="app.html">                 app.coffee               </a>                                           <a class="source" href="environment.html">                 environment.coffee               </a>                                           <a class="source" href="redis.html">                 redis.coffee               </a>                                           <a class="source" href="routes.html">                 routes.coffee               </a>                                           <a class="source" href="sockets.html">                 sockets.coffee               </a>                        </div>         </div>       </div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               redis.coffee             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>               <h3>Module Dependencies</h3>
+
+<ul>
+<li><a href="https://github.com/mranney/node_redis">Redis</a> (NoSQL storage)
+There's some handy documentation <a href="http://redis.io/commands">here</a> that descibes what functions are
+available for <code>Redis</code>.</li>
+</ul>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">redis = </span><span class="nx">require</span> <span class="s">&#39;redis&#39;</span></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <p>Constants</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">DNS =</span>
+	<span class="nv">BLANCA:	</span>		<span class="s">&quot;172.16.5.25&quot;</span>
+	<span class="nv">BLANCA_REDIS:	</span><span class="s">&quot;172.16.9.10&quot;</span>
+	<span class="nv">GARY:	</span>		<span class="s">&quot;172.16.8.28&quot;</span>
+	<span class="nv">MATT:	</span>		<span class="s">&quot;172.16.5.154&quot;</span>
+	<span class="nv">LOCALHOST:	</span>	<span class="s">&quot;127.0.0.1&quot;</span>
+<span class="nv">REDIS =</span>
+	<span class="nv">HOST: </span><span class="nx">DNS</span><span class="p">.</span><span class="nx">BLANCA_REDIS</span>
+	<span class="nv">PORT_NO: </span><span class="s">&quot;6379&quot;</span></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <p>Define the <code>redis</code> object that will be exported to our NotiServer app.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">defineRedis = </span><span class="nf">(express, fn) -&gt;</span>
+	<span class="nv">redisConfig =</span>
+		<span class="nv">RedisStore: </span><span class="nx">require</span><span class="p">(</span><span class="s">&#39;connect-redis&#39;</span><span class="p">)(</span><span class="nx">express</span><span class="p">)</span>
+	
+	<span class="nv">redisConfig.sessionStore = </span><span class="k">new</span> <span class="nx">redisConfig</span><span class="p">.</span><span class="nx">RedisStore</span><span class="p">(</span>
+		<span class="nv">host: </span><span class="nx">REDIS</span><span class="p">.</span><span class="nx">HOST</span><span class="p">,</span>
+		<span class="nv">port: </span><span class="nx">REDIS</span><span class="p">.</span><span class="nx">PORT_NO</span>
+	<span class="p">)</span>
+	</pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <p>Map the native <code>redis.createClient</code> function to our internal redis manager with custom port and host.</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="nv">redisConfig.createClient = </span><span class="nf">() -&gt;</span>
+		<span class="k">return</span> <span class="nx">redis</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">REDIS</span><span class="p">.</span><span class="nx">PORT_NO</span><span class="p">,</span> <span class="nx">REDIS</span><span class="p">.</span><span class="nx">HOST</span><span class="p">)</span>
+	
+	<span class="nx">fn</span><span class="p">(</span><span class="nx">redisConfig</span><span class="p">);</span>
+	
+	<span class="k">return</span>
+
+<span class="nv">exports.defineRedis = </span><span class="nx">defineRedis</span>
+
+</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 

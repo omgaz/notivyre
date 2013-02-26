@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ResizableDialogBounds">
+		<item value="1218" key="height"/>
+		<item value="2207" key="width"/>
+		<item value="22" key="y"/>
+		<item value="203" key="x"/>
+	</section>
+	<section name="org.eclipse.compare.internal.CompareDialog">
+		<item value="2407" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="1318" key="DIALOG_HEIGHT"/>
+		<item value="50" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

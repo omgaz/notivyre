@@ -1,0 +1,8 @@
+//def_repo_repo_/Users/gary/projects/NotiVYRE/client-notivyre=http\://blanca.vyre.net\:12080/scm/hg/client-notivyre
+//def_repo_repo_/Users/gary/projects/NotiVYRE/server-notivyre=http\://blanca.vyre.net\:12080/scm/hg/server-notivyre
+//repo_/Users/gary/projects/NotiVYRE/client-notivyre=d51 http\://blanca.vyre.net\:12080/scm/hg/client-notivyre 14 e mQ/v72YEjfU\= 26 e 5CO7zKgV/DBLwPP8M49xJw\=\= 0 |
+//repo_/Users/gary/projects/NotiVYRE/server-notivyre=d51 http\://blanca.vyre.net\:12080/scm/hg/server-notivyre 14 e mQ/v72YEjfU\= 26 e 5CO7zKgV/DBLwPP8M49xJw\=\= 0 |
+eclipse.preferences.version=1
+hg=/usr/local/bin/hg
+hg.batchsize.status=10
+repo_=d51 http\://blanca.vyre.net\:12080/scm/hg/client-notivyre 14 e mQ/v72YEjfU\= 26 e 5CO7zKgV/DBLwPP8M49xJw\=\= 0 |d51 http\://blanca.vyre.net\:12080/scm/hg/server-notivyre 14 e mQ/v72YEjfU\= 26 e 5CO7zKgV/DBLwPP8M49xJw\=\= 0 |
